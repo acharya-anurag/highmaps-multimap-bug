@@ -1,0 +1,524 @@
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Project Report</title>
+
+    <!-- Bootstrap core CSS -->
+    
+
+    <!-- Custom styles for this template -->
+   
+	<script src="ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  
+            <script src="code.highcharts.com/highmaps.js"></script>
+        <script src="code.highcharts.com/mapdata/custom/europe.js"></script>
+     <script src="code.highcharts.com/mapdata/custom/world.js"></script>
+    <script type="text/javascript" src="code.highcharts.com/modules/exporting.js"></script>
+     
+    
+  </head>
+
+<body onLoad="replaceScript()">
+<div class="container">
+<div class="well"><h4>Bug</h4></div>
+
+
+
+<div class="well" style="text-align:justify;" >
+
+<p>Map Demo</p>
+[MAP]
+[MAP]
+[MAP]
+
+     
+     
+ </div>
+
+</div>
+
+<script type="text/javascript">
+
+     $(function () {
+    var toReplace = '[MAP]';
+    var replaceWith ='<div><img src="graphics/help.png" style="height:25px; width:25px; float:right; " onClick="warning()" /><div id="map6">I am here</div></div>';
+    document.body.innerHTML = document.body.innerHTML.replace(toReplace, replaceWith);
+});
+function warning()
+{
+	alert("This is the sample data. User data can be written as per the requirement");
+}
+$(function () {
+
+
+
+     var series =
+     [
+             {
+        "type": "map",
+                "name": "Areas",
+                                "lineWidth": "0",
+                "data": 
+        [{
+            "name": "Argentina",
+                        "color": "#009",                         "path": "M231,-446,243,-417,229,-365,204,-387,211,-581,261,-592,276,-619,306,-617,364,-565,373,-529,396,-515,384,-486,362,-459z",                                      }],
+        "showInLegend": false
+    },
+             {
+        "type": "map",
+                "name": "Areas",
+                                "lineWidth": "0",
+                "data": 
+        [{
+            "name": "Buenos Air",
+                        "color": "#eee",                         "path": "M339,-594,353,-673,371,-722,485,-814,479,-880,443,-821,357,-812,382,-884,299,-927,180,-992,162,-949,106,-985,76,-929,43,-909,47,-817,2,-686,22,-581,16,-237,22,-109,0,-53,119,8,164,-167,139,-235,209,-320,207,-372,213,-592,267,-596,285,-630z",                                      }],
+        "showInLegend": false
+    },
+         
+];
+
+
+$('#map6').highcharts('Map', {
+        chart : {
+            plotBorderWidth : 1,
+            plotBackgroundColor: '#f4e2ba',
+            ignoreHiddenSeries: false
+        },
+
+        title : {
+            text : 'Maps1'
+        },
+         mapNavigation: {
+                enabled: true,
+                enableDoubleClickZoomTo: true
+            },
+
+        subtitle : {
+            text : 'Map of Argentina'
+        },
+
+        xAxis: {
+            minPadding: -0.01
+        },
+        yAxis: {
+            minPadding: -0.01,
+            maxPadding: 0.01
+        },
+        plotOptions: {
+            series: {
+                tooltip: {
+                    headerFormat: '',
+                    pointFormat: '{point.name}'
+                }
+            }
+        },
+
+        legend: {
+            align: 'left',
+            backgroundColor: 'white',
+            floating: true,
+            layout: 'vertical',
+            verticalAlign: 'bottom',
+            x: 50,
+            y: -50
+        },
+		credits:
+		{
+			enabled:false,
+		},
+
+
+        series : series
+    });
+});
+
+
+
+</script><script type="text/javascript">
+
+     $(function () {
+    var toReplace = '[MAP]';
+    var replaceWith ='<div><img src="graphics/help.png" style="height:25px; width:25px; float:right; " onClick="warning()" /><div id="map7">I am here</div></div>';
+    document.body.innerHTML = document.body.innerHTML.replace(toReplace, replaceWith);
+});
+function warning()
+{
+	alert("This is the sample data. User data can be written as per the requirement");
+}
+$(function () {
+
+
+
+     var series =
+     [
+             {
+        "type": "map",
+                "name": "Areas",
+                                "lineWidth": "0",
+                "data": 
+        [{
+            "name": "1",
+                                    "path": "M199,-375,193,-491,201,-524,219,-538,203,-585,114,-562,85,-542,22,-538,22,-382,120,-380,134,-367,152,-382z",                                      }],
+        "showInLegend": false
+    },
+             {
+        "type": "map",
+                "name": "Areas",
+                                "lineWidth": "0",
+                "data": 
+        [{
+            "name": "2",
+                                    "path": "M20,-843,22,-538,86,-543,117,-562,194,-583,222,-668,211,-717,177,-770,83,-806z",                                      }],
+        "showInLegend": false
+    },
+             {
+        "type": "map",
+                "name": "Areas",
+                                "lineWidth": "0",
+                "data": 
+        [{
+            "name": "3",
+                                    "path": "M20,-843,20,-843L193,-855,244,-898,297,-837,350,-823,210,-718,163,-775,107,-796z",                                      }],
+        "showInLegend": false
+    },
+             {
+        "type": "map",
+                "name": "Areas",
+                                "lineWidth": "0",
+                "data": 
+        [{
+            "name": "4",
+                                    "path": "M218,-723,425,-642,510,-768,482,-794,453,-784,404,-819,386,-847z",                                      }],
+        "showInLegend": false
+    },
+             {
+        "type": "map",
+                "name": "Areas",
+                                "lineWidth": "0",
+                "data": 
+        [{
+            "name": "5",
+                                    "path": "M203,-585,366,-564,386,-619,422,-644,226,-721,221,-663z",                                      }],
+        "showInLegend": false
+    },
+             {
+        "type": "map",
+                "name": "Areas",
+                                "lineWidth": "0",
+                "data": 
+        [{
+            "name": "6",
+                                    "path": "M199,-375,260,-428,289,-455,341,-473,350,-489,344,-538,366,-564,203,-583,213,-534,193,-487z",                                      }],
+        "showInLegend": false
+    },
+             {
+        "type": "map",
+                "name": "Areas",
+                                "lineWidth": "0",
+                "data": 
+        [{
+            "name": "7",
+                                    "path": "M351,-476,345,-534,364,-560,379,-600,384,-613,413,-641,516,-625,511,-542,508,-474,490,-454,366,-470z",                                      }],
+        "showInLegend": false
+    },
+             {
+        "type": "map",
+                "name": "Areas",
+                                "lineWidth": "0",
+                "data": 
+        [{
+            "name": "8",
+                                    "path": "M508,-770,531,-758,555,-729,594,-697,646,-693,665,-664,657,-646,638,-625,423,-639z",                                      }],
+        "showInLegend": false
+    },
+             {
+        "type": "map",
+                "name": "Areas",
+                                "lineWidth": "0",
+                "data": 
+        [{
+            "name": "9",
+                                    "path": "M385,-846,402,-892,431,-892,455,-924,470,-930,478,-896,522,-880,549,-851,555,-831,511,-769,475,-791,446,-789,412,-813z",                                      }],
+        "showInLegend": false
+    },
+             {
+        "type": "map",
+                "name": "Areas",
+                                "lineWidth": "0",
+                "data": 
+        [{
+            "name": "9",
+                                    "path": "M248,-894,295,-959,346,-938,364,-989,415,-949,464,-927,419,-892,402,-892,383,-845,342,-826,295,-839z",                                      }],
+        "showInLegend": false
+    },
+             {
+        "type": "map",
+                "name": "Areas",
+                                "lineWidth": "0",
+                "data": 
+        [{
+            "name": "10",
+                                    "path": "M555,-831,496,-781,589,-702,654,-682,665,-664,689,-699,665,-737,624,-770z",                                      }],
+        "showInLegend": false
+    },
+             {
+        "type": "map",
+                "name": "Areas",
+                                "lineWidth": "0",
+                "data": 
+        [{
+            "name": "11",
+                                    "path": "M520,-625,508,-474,654,-495,693,-467,726,-508,717,-593,671,-630,520,-623z",                                      }],
+        "showInLegend": false
+    },
+             {
+        "type": "map",
+                "name": "Areas",
+                                "lineWidth": "0",
+                "data": 
+        [{
+            "name": "12",
+                                    "path": "M484,-449,533,-398,555,-392,630,-377,656,-440,693,-467,651,-494,514,-475z",                                      }],
+        "showInLegend": false
+    },
+             {
+        "type": "map",
+                "name": "Areas",
+                                "lineWidth": "0",
+                "data": 
+        [{
+            "name": "13",
+                                    "path": "M351,-477,411,-280,602,-333,623,-378,542,-396,482,-450z",                                      }],
+        "showInLegend": false
+    },
+             {
+        "type": "map",
+                "name": "Areas",
+                                "lineWidth": "0",
+                "data": 
+        [{
+            "name": "14",
+                                    "path": "M341,-473,269,-436,199,-377,122,-341,157,-270,217,-258,374,-268,409,-287z",                                      }],
+        "showInLegend": false
+    },
+             {
+        "type": "map",
+                "name": "Areas",
+                                "lineWidth": "0",
+                "data": 
+        [{
+            "name": "15",
+                                    "path": "M184,-370,24,-382,0,-42,75,11,134,-28,154,-207,169,-268,124,-342z",                                      }],
+        "showInLegend": false
+    },
+             {
+        "type": "mappoint",
+                    "marker": {
+            "fillColor": "white",
+            "lineColor": "black",
+            "lineWidth": 1,
+            "radius": 5
+        },
+
+                    "name": "Cities",
+                                "data": 
+        [{
+            "name": "Buenous",
+                                                     "x": 200,                "y": -400,        }],
+        "showInLegend": false
+    },
+             {
+        "type": "mappoint",
+                    "marker": {
+            "fillColor": "white",
+            "lineColor": "black",
+            "lineWidth": 1,
+            "radius": 5
+        },
+
+                    "name": "Adsd",
+                                "data": 
+        [{
+            "name": "Argentina",
+                                                     "x": 350,                "y": -450,        }],
+        "showInLegend": false
+    },
+         
+];
+
+
+$('#map7').highcharts('Map', {
+        chart : {
+            plotBorderWidth : 1,
+            plotBackgroundColor: '#f4e2ba',
+            ignoreHiddenSeries: false
+        },
+
+        title : {
+            text : 'Maps2'
+        },
+         mapNavigation: {
+                enabled: true,
+                enableDoubleClickZoomTo: true
+            },
+
+        subtitle : {
+            text : 'Map of Argentina'
+        },
+
+        xAxis: {
+            minPadding: -0.01
+        },
+        yAxis: {
+            minPadding: -0.01,
+            maxPadding: 0.01
+        },
+        plotOptions: {
+            series: {
+                tooltip: {
+                    headerFormat: '',
+                    pointFormat: '{point.name}'
+                }
+            }
+        },
+
+        legend: {
+            align: 'left',
+            backgroundColor: 'white',
+            floating: true,
+            layout: 'vertical',
+            verticalAlign: 'bottom',
+            x: 50,
+            y: -50
+        },
+		credits:
+		{
+			enabled:false,
+		},
+
+
+        series : series
+    });
+});
+
+
+
+</script><script type="text/javascript">
+
+     $(function () {
+    var toReplace = '[MAP]';
+    var replaceWith ='<div><img src="graphics/help.png" style="height:25px; width:25px; float:right; " onClick="warning()" /><div id="map8">I am here</div></div>';
+    document.body.innerHTML = document.body.innerHTML.replace(toReplace, replaceWith);
+});
+function warning()
+{
+	alert("This is the sample data. User data can be written as per the requirement");
+}
+$(function () {
+
+
+
+     var series =
+     [
+             {
+        "type": "map",
+                "name": "Areas",
+                                "lineWidth": "0",
+                "data": 
+        [{
+            "name": "Buneous Air Province",
+                        "color": "#81F781",                         "path": "M0,-25,0,-844,208,-833,312,-952,345,-926,372,-977,564,-875,701,-687,741,-538,635,-355,626,-319,117,-273,144,-162,100,-85,124,-45,77,23z",                                      }],
+        "showInLegend": false
+    },
+             {
+        "type": "mapline",
+                "name": "Areas",
+                                "lineWidth": "2",
+                "data": 
+        [{
+            "name": "Reusq",
+                        "color": "#008",                         "path": "M208,-704,153,-335,104,-322,86,-401,108,-430,106,-485,100,-541,122,-596,91,-647L115,-702,159,-762,261,-766,305,-680,248,-600,383,-603",                                      }],
+        "showInLegend": false
+    },
+             {
+        "type": "mapline",
+                "name": "areas",
+                                "lineWidth": "1",
+                "data": 
+        [{
+            "name": "safasf",
+                        "color": "#000",                         "path": "M288,-479C438,-496,409,-556,409,-556L480,-543,507,-620,462,-707,549,-700,560,-627,611,-620,617,-649,628,-660,659,-654,666,-614,664,-589,624,-550,580,-530,575,-488,580,-446,529,-373,303,-377,303,-377",                                      }],
+        "showInLegend": false
+    },
+         
+];
+
+
+$('#map8').highcharts('Map', {
+        chart : {
+            plotBorderWidth : 1,
+            plotBackgroundColor: '#f4e2ba',
+            ignoreHiddenSeries: false
+        },
+
+        title : {
+            text : 'Maps3'
+        },
+         mapNavigation: {
+                enabled: true,
+                enableDoubleClickZoomTo: true
+            },
+
+        subtitle : {
+            text : 'Map of Argentina'
+        },
+
+        xAxis: {
+            minPadding: -0.01
+        },
+        yAxis: {
+            minPadding: -0.01,
+            maxPadding: 0.01
+        },
+        plotOptions: {
+            series: {
+                tooltip: {
+                    headerFormat: '',
+                    pointFormat: '{point.name}'
+                }
+            }
+        },
+
+        legend: {
+            align: 'left',
+            backgroundColor: 'white',
+            floating: true,
+            layout: 'vertical',
+            verticalAlign: 'bottom',
+            x: 50,
+            y: -50
+        },
+		credits:
+		{
+			enabled:false,
+		},
+
+
+        series : series
+    });
+});
+
+
+
+</script>
+  </body>
+</html>
